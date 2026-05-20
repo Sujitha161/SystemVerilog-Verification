@@ -4,7 +4,7 @@ module d_ff(
   input d,
   output reg q);
    
-  always@(posedge clk or negedge rst)begin
+  always@(posedge clk )begin
     if(!rst)
       q<=0;
     else
